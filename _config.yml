@@ -12,9 +12,9 @@ plugins:
 collections:
   authors:
     output: true
-  shop_items:
-    output: true
-    permalink: /shop/:name
+  # shop_items:
+    # output: true
+    # permalink: /shop/:name
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
