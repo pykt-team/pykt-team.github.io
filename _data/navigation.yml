@@ -1,0 +1,15 @@
+---
+main_menu:
+- text: News
+  url: "/news"
+  menu_type: none
+- text: Docs
+  url: https://pykt-toolkit.readthedocs.io/en/latest
+  menu_type: none
+  submenu: []
+- text: GitHub
+  url: https://github.com/pykt-team/pykt-toolkit
+  menu_type: none
+- text: Discussions
+  url: https://github.com/pykt-team/pykt-toolkit/discussions
+  menu_type: none
