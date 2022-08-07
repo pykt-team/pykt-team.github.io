@@ -4,7 +4,7 @@ title: Our paper "pyKT" released in arxiv.
 date: 2022-06-22 16:00:00 +0000
 tags: ''
 categories: []
-author: 'tabchen'
+author: ''
 post_image: "/assets/images/posts/pykt_arxiv.png"
 post_format: ''
 trending: true
