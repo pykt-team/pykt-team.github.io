@@ -1,15 +1,21 @@
 ---
 layout: default
 title: PyKT Team
-custom_css: purple
-custom_font: font2
+custom_css: blue
+custom_font: font4
 
-hero_area:
+
+slider_area:
   enable: true
-  bg_image: "/assets/images/art/slider-bg12.jpg"
-  title: "Hello! We are PyKT Team"
-  btn_text: "Get Started"
-  btn_url: "https://pykt-toolkit.readthedocs.io/en/latest/quick_start_cn.html"
+  title: "PyKT is a python library for knowledge tracing."
+  sub_title: "PyKT makes knowledge tracing experiment easier."
+  button_text: "Get Started"
+  button_url: "https://pykt-toolkit.readthedocs.io/en/latest/quick_start_cn.html"
+  slider_images:
+    img_01: "/assets/images/art/rocket1.png"
+    img_02: "/assets/images/art/rocket2.png"
+    img_03: "/assets/images/art/rocket3.png"
+    img_04: "/assets/images/art/rocket4.png"
 
 
 three_columns_area:
@@ -171,37 +177,144 @@ faq_area:
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,  nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.
 
 ---
-{% include header.html container_class="container" extra_class="absolute transparent inverse-text nav-uppercase" light_logo="true" %}
-{% if page.hero_area.enable %}
-<div class="wrapper dark-wrapper">
-  <div class="rev_slider_wrapper fullwidth-container">
-    <div id="slider10" class="rev_slider fullwidthbanner" data-version="5.4.7">
+{% include header_4.html logo_class="header-logo" %}
+{% if page.slider_area.enable %}
+<div class="wrapper bg-opacity-default">
+  <div class="rev_slider_wrapper fullwidth-container dark-spinner">
+    <div id="slider7" class="rev_slider fullwidthbanner" data-version="5.4.7">
       <ul>
         <li data-transition="fade" data-thumb="">
-          <img src="{{page.hero_area.bg_image}}" alt="{{page.hero_area.title}}"/>
-          <div class="tp-caption font-weight-600 color-white text-center" 
-               data-x="center" 
-               data-y="middle" 
-               data-voffset="['-45','-45','-45','-45']" 
-               data-fontsize="['50','50','40','36']" 
-               data-lineheight="['65','65','55','51']" 
-               data-width="['550','550','550','340']" 
-               data-textAlign="['center','center','center','center']" 
-               data-whitespace="['normal','normal','normal','normal']" 
-               data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.7;sY:0.7;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
-               data-responsive="on" 
-               data-responsive_offset="on" style="z-index: 9;"> {{page.hero_area.title}}
-          </div>
-          <a class="tp-caption btn btn-l btn-white btn-strong-hover scroll" 
-               data-x="center" 
-               data-y="middle" 
-               data-voffset="['85','85','85','85']" 
-               data-width="['auto','auto','auto','auto']" 
-               data-textAlign="['center','center','center','center']" 
-               data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.7;sY:0.7;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
-               data-responsive="on" 
-               data-responsive_offset="on" style="z-index: 9;" href="{{page.hero_area.btn_url}}"> {{page.hero_area.btn_text}}
-          </a>
+         <img src="/assets/images/dummy.png" style="background:transparent" alt="{{page.slider_area.title}}"/>
+         {% if page.slider_area.slider_images.img_01 %}
+          <div class="tp-caption" 
+             data-x="['center','center','center','center']" 
+             data-y="['bottom','bottom','bottom','bottom']" 
+             data-hoffset="['0','0','0','0']" 
+             data-voffset="['-2','-2','-2','-2']" 
+             data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-visibility="['on','on','on','on']" 
+             data-width="none" 
+             data-height="none" 
+             data-type="image" 
+             data-responsive="on" 
+             data-responsive_offset="on" 
+             data-basealign="slide" style="z-index: 5;">
+             <img data-lazyload="" src="{{page.slider_area.slider_images.img_01}}" 
+             data-ww="['100%','100%','100%','100%']" 
+             data-hh="auto" alt="" />	          
+        </div>
+	    <!-- /.tp-caption -->
+	     {% endif %}
+	     {% if page.slider_area.slider_images.img_02 %}
+          <div class="tp-caption" 
+             data-x="['center','center','center','center']" 
+             data-y="['middle','middle','middle','middle']" 
+             data-hoffset="['260','260','260','260']" 
+             data-voffset="['60','60','60','60']" 
+             data-frames='[{"delay":600,"speed":1200,"frame":"0","from":"y:bottom;rX:90deg;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+             data-visibility="['on','on','on','off']" 
+             data-width="none" 
+             data-height="none" 
+             data-type="image" 
+             data-responsive="on" 
+             data-responsive_offset="on" 
+             data-basealign="slide" style="z-index: 5;">
+             <img data-lazyload="" src="{{page.slider_area.slider_images.img_02}}" 
+             data-ww="['220','220','220','220']" 
+             data-hh="auto" alt="" />
+           </div>
+	       <!-- /.tp-caption -->
+	      {% endif %}
+	      {% if page.slider_area.slider_images.img_03 %}
+          <div class="tp-caption" 
+             data-x="['center','center','center','center']" 
+             data-y="['middle','middle','middle','middle']" 
+             data-hoffset="['260','260','260','260']" 
+             data-voffset="['-170','-170','-170','-170']" 
+             data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-visibility="['on','on','on','off']" 
+             data-width="none" 
+             data-height="none" 
+             data-type="image" 
+             data-responsive="on" 
+             data-responsive_offset="on" 
+             data-basealign="slide" style="z-index: 6;">
+             <img data-lazyload="" src="{{page.slider_area.slider_images.img_03}}" 
+             data-ww="['380','380','380','380']" 
+             data-hh="auto" alt="" />
+	      
+         </div>
+	     <!-- /.tp-caption -->
+	    {% endif %}
+        {% if page.slider_area.slider_images.img_04 %}
+          <div class="tp-caption" 
+             data-x="['center','center','center','center']" 
+             data-y="['middle','middle','middle','middle']" 
+             data-hoffset="['300','300','300','300']" 
+             data-voffset="['70','70','70','70']" 
+             data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-visibility="['on','on','on','off']" 
+             data-width="none" 
+             data-height="none" 
+             data-type="image" 
+             data-responsive="on" 
+             data-responsive_offset="on" 
+             data-basealign="slide" style="z-index: 5;">
+             <img data-lazyload="" src="{{page.slider_area.slider_images.img_04}}" 
+             data-ww="['480','480','480','480']" 
+             data-hh="auto" alt="" />
+         </div>
+	      <!-- /.tp-caption -->
+	      {% endif %}
+	      {% if page.slider_area.title %}
+          <div class="tp-caption font-weight-500 color-dark" 
+             data-x="['left','left','left','center']" 
+             data-y="middle" 
+             data-hoffset="['50','30','30','0']" 
+             data-voffset="['-125','-125','-125','-105']" 
+             data-fontsize="['40','40','34','36']" 
+             data-lineheight="['50','50','44','46']" 
+             data-width="['500','500','420','340']" 
+             data-textAlign="['left','left','left','center']" 
+             data-whitespace="['normal','normal','normal','normal']" 
+             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-responsive="on" 
+             data-responsive_offset="on" style="z-index: 9;"> {{page.slider_area.title}}
+        </div>
+        {% endif %}
+	    <!-- /.tp-caption -->
+	    {% if page.slider_area.sub_title %}
+          <div class="tp-caption font-weight-300 color-dark" 
+             data-x="['left','left','left','center']" 
+             data-y="middle" 
+             data-hoffset="['50','30','30','0']"
+             data-voffset="['-20','-20','-20','30']" 
+             data-fontsize="['26','26','22','24']" 
+             data-lineheight="['36','36','32','34']" 
+             data-width="['500','500','420','340']" 
+             data-textAlign="['left','left','left','center']" 
+             data-whitespace="['normal','normal','normal','normal']" 
+             data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-responsive="on" 
+             data-responsive_offset="on" style="z-index: 9;"> {{page.slider_area.sub_title}}
+         </div>
+	     <!-- /.tp-caption -->
+	     {% endif %}
+	     {% if page.slider_area.button_text %}
+          <a class="tp-caption btn btn-l btn-default" 
+             data-x="['left','left','left','center']" 
+             data-y="middle" 
+             data-hoffset="['50','30','30','0']"
+             data-voffset="['75','75','75','135']" 
+             data-width="['auto','auto','auto','auto']" 
+             data-textAlign="['left','left','left','center']" 
+             data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+             data-responsive="on" 
+             data-responsive_offset="on" style="z-index: 9;" href="{{page.slider_area.button_url}}"> 
+             {{page.slider_area.button_text}}
+        </a>
+	    <!-- /.tp-caption -->
+	    {% endif %}
         </li>
       </ul>
       <div class="tp-bannertimer tp-bottom"></div>
