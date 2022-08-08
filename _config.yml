@@ -80,7 +80,7 @@ pagination:
 #paginate: 3
 #paginate_path: "/legacy/page:num/"
 
-
+timezone: Asia/Shanghai
 ############################################################
 
 tag_page_layout: tag_page
