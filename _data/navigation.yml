@@ -13,6 +13,6 @@ main_menu:
 - text: Discussions
   url: https://github.com/pykt-team/pykt-toolkit/discussions
   menu_type: none
-- text: FAQ
+- text: FAQs
   url: https://github.com/pykt-team/pykt-toolkit/discussions/categories/q-a
   menu_type: none
