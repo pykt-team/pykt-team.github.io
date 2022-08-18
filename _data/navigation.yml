@@ -1,8 +1,5 @@
 ---
 main_menu:
-- text: FAQ
-  url: https://github.com/pykt-team/pykt-toolkit/discussions/categories/q-a
-  menu_type: ''
 - text: News
   url: "/news"
   menu_type: none
@@ -15,4 +12,7 @@ main_menu:
   menu_type: none
 - text: Discussions
   url: https://github.com/pykt-team/pykt-toolkit/discussions
+  menu_type: none
+- text: FAQ
+  url: https://github.com/pykt-team/pykt-toolkit/discussions/categories/q-a
   menu_type: none
