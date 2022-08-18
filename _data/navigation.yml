@@ -1,5 +1,8 @@
 ---
 main_menu:
+- text: FAQ
+  url: https://github.com/pykt-team/pykt-toolkit/discussions/categories/q-a
+  menu_type: ''
 - text: News
   url: "/news"
   menu_type: none
