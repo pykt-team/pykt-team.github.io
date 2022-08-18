@@ -7,6 +7,12 @@ main_menu:
   url: https://pykt-toolkit.readthedocs.io/en/latest
   menu_type: none
   submenu: []
+- text: Model Zoo
+  url: https://pykt-toolkit.readthedocs.io/en/latest/models.html
+  menu_type: none
+- text: Datasets
+  url: https://pykt-toolkit.readthedocs.io/en/latest/datasets.html
+  menu_type: none
 - text: GitHub
   url: https://github.com/pykt-team/pykt-toolkit
   menu_type: none
