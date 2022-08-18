@@ -7,7 +7,7 @@ main_menu:
   url: https://pykt-toolkit.readthedocs.io/en/latest
   menu_type: none
   submenu: []
-- text: Model Zoo
+- text: Models
   url: https://pykt-toolkit.readthedocs.io/en/latest/models.html
   menu_type: none
 - text: Datasets
@@ -18,7 +18,4 @@ main_menu:
   menu_type: none
 - text: Discussions
   url: https://github.com/pykt-team/pykt-toolkit/discussions
-  menu_type: none
-- text: FAQ
-  url: https://github.com/pykt-team/pykt-toolkit/discussions/categories/q-a
   menu_type: none
