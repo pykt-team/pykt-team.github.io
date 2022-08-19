@@ -103,8 +103,6 @@ faq_area:
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
-<!-- <script src="https://use.fontawesome.com/4015167e15.js"></script> -->
-
 {% include header_4_v2.html logo_class="header-logo" %}
 {% if page.slider_area.enable %}
 <div class="wrapper bg-opacity-default">
@@ -138,8 +136,9 @@ faq_area:
              data-x="['center','center','center','center']" 
              data-y="['middle','middle','middle','middle']" 
              data-hoffset="['260','260','260','260']" 
-             data-voffset="['60','60','60','60']" 
-             data-frames='[{"delay":600,"speed":1200,"frame":"0","from":"y:bottom;rX:90deg;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+             
+             data-voffset="['-60','60','60','60']" 
+             data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"y:bottom;rX:90deg;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
              data-visibility="['on','on','on','off']" 
              data-width="none" 
              data-height="none" 
@@ -147,39 +146,38 @@ faq_area:
              data-responsive="on" 
              data-responsive_offset="on" 
              data-basealign="slide" style="z-index: 5;">
-             <img data-lazyload="" src="{{page.slider_area.slider_images.img_02}}" 
-             data-ww="['220','220','220','220']" 
-             data-hh="auto" alt="" />
+             <div class="sidebox widget">
+              <h3><i class="icofont-bullhorn" style="color:#FF0000"></i><b style="color:#FF0000";>News!</b></h3>
+
+              <ul class="unordered-list-disc"> 
+                {% for post in site.posts limit: 3 %}
+                  <li>
+                      <!-- <div class="post-content"> -->
+                        {% if post.title %}
+                        <h6 class="post-title"><a href="{{post.url}}">{{post.title | truncatewords: "60" }}</a></h6>
+                        {% endif %}
+                        {% if post.date %}
+                        <div class="meta">
+                          <span class="date"><i class="jam jam-clock"></i>{{post.date | date_to_string}}</span>
+                        </div>
+                        {% endif %}
+                      <!-- </div> -->
+                  </li>
+                  {% endfor %}
+              </ul>
+            </div>
+             <!-- <img data-lazyload="" src="{{page.slider_area.slider_images.img_02}}"  -->
+             <!-- data-ww="['220','220','220','220']"  -->
+             <!-- data-hh="auto" alt="" /> -->
            </div>
 	       <!-- /.tp-caption -->
 	      {% endif %}
-	      {% if page.slider_area.slider_images.img_03 %}
-          <div class="tp-caption" 
-             data-x="['center','center','center','center']" 
-             data-y="['middle','middle','middle','middle']" 
-             data-hoffset="['260','260','260','260']" 
-             data-voffset="['-170','-170','-170','-170']" 
-             data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
-             data-visibility="['on','on','on','off']" 
-             data-width="none" 
-             data-height="none" 
-             data-type="image" 
-             data-responsive="on" 
-             data-responsive_offset="on" 
-             data-basealign="slide" style="z-index: 6;">
-             <img data-lazyload="" src="{{page.slider_area.slider_images.img_03}}" 
-             data-ww="['380','380','380','380']" 
-             data-hh="auto" alt="" />
-	      
-         </div>
-	     <!-- /.tp-caption -->
-	    {% endif %}
         {% if page.slider_area.slider_images.img_04 %}
           <div class="tp-caption" 
              data-x="['center','center','center','center']" 
              data-y="['middle','middle','middle','middle']" 
              data-hoffset="['300','300','300','300']" 
-             data-voffset="['70','70','70','70']" 
+             data-voffset="['170','1070','70','70']" 
              data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
              data-visibility="['on','on','on','off']" 
              data-width="none" 
@@ -199,56 +197,50 @@ faq_area:
              data-x="['left','left','left','center']" 
              data-y="middle" 
              data-hoffset="['50','30','30','0']" 
-             data-voffset="['-125','-125','-125','-105']" 
+             data-voffset="['-125','-125','-125','-105']"  
              data-fontsize="['40','40','34','36']" 
              data-lineheight="['50','50','44','46']" 
              data-width="['500','500','420','340']" 
              data-textAlign="['left','left','left','center']" 
              data-whitespace="['normal','normal','normal','normal']" 
-             data-frames='[{"delay":1000,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+             data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
              data-responsive="on" 
              data-responsive_offset="on" style="z-index: 9;"> {{page.slider_area.title}}
         </div>
         {% endif %}
 	    <!-- /.tp-caption -->
-	    {% if page.slider_area.sub_title %}
-          <div class="tp-caption font-weight-300 color-dark" 
-             data-x="['left','left','left','center']" 
-             data-y="middle" 
-             data-hoffset="['50','30','30','0']"
-             data-voffset="['50','-20','-20','30']" 
-             data-fontsize="['26','26','22','24']" 
-             data-lineheight="['36','36','32','34']" 
-             data-width="['500','500','420','340']" 
-             data-textAlign="['left','left','left','center']" 
-             data-whitespace="['normal','normal','normal','normal']" 
-             data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
-             data-responsive="on" 
-             data-responsive_offset="on" style="z-index: 9;"> 
-            
-            <div class="sidebox widget">
-              <i class="icofont-bullhorn" style="color:#FF0000"><b style="color:#FF0000";>News!</b>
-              </i>
-              <ul class="unordered-list-disc"> 
-                {% for post in site.posts limit: 3 %}
-                  <li>
-                      <!-- <div class="post-content"> -->
-                        {% if post.title %}
-                        <h6 class="post-title"><a href="{{post.url}}">{{post.title | truncatewords: "60" }}</a></h6>
-                        {% endif %}
-                        {% if post.date %}
-                        <div class="meta">
-                          <span class="date"><i class="jam jam-clock"></i>{{post.date | date_to_string}}</span>
-                        </div>
-                        {% endif %}
-                      <!-- </div> -->
-                  </li>
-                  {% endfor %}
-              </ul>
-            </div>
-            
-         </div>
-	     {% endif %}
+        {% if page.slider_area.sub_title %}
+            <div class="tp-caption font-weight-300 color-dark" 
+              data-x="['left','left','left','center']" 
+              data-y="middle" 
+              data-hoffset="['50','30','30','0']"
+              data-voffset="['-20','-20','-20','30']" 
+              data-fontsize="['26','26','22','24']" 
+              data-lineheight="['36','36','32','34']" 
+              data-width="['500','500','420','340']" 
+              data-textAlign="['left','left','left','center']" 
+              data-whitespace="['normal','normal','normal','normal']" 
+              data-frames='[{"delay":200,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
+              data-responsive="on" 
+              data-responsive_offset="on" style="z-index: 9;"> {{page.slider_area.sub_title}}
+          </div>
+        <!-- /.tp-caption -->
+        {% endif %}
+        {% if page.slider_area.button_text %}
+            <a class="tp-caption btn btn-l btn-default" 
+              data-x="['left','left','left','center']" 
+              data-y="middle" 
+              data-hoffset="['50','30','30','0']"
+              data-voffset="['75','75','75','135']" 
+              data-width="['auto','auto','auto','auto']" 
+              data-textAlign="['left','left','left','center']" 
+              data-frames='[{"delay":500,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
+              data-responsive="on" 
+              data-responsive_offset="on" style="z-index: 9;" href="{{page.slider_area.button_url}}"> 
+              {{page.slider_area.button_text}}
+          </a>
+        <!-- /.tp-caption -->
+        {% endif %}
         </li>
       </ul>
       <div class="tp-bannertimer tp-bottom"></div>
