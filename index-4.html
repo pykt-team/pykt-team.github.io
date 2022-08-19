@@ -66,7 +66,7 @@ video_area:
   video_url: "https://www.youtube.com/watch?v=26TbMXXOe0I"
 
 blogs_area:
-  enable: true
+  enable: false
   title: "Recent News"
   sub_title: "Check out some news of PyKT."
   posts_number: 5
@@ -100,9 +100,10 @@ faq_area:
 
 ---
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
-
+<!-- <script src="https://use.fontawesome.com/4015167e15.js"></script> -->
 
 {% include header_4_v2.html logo_class="header-logo" %}
 {% if page.slider_area.enable %}
@@ -215,7 +216,7 @@ faq_area:
              data-x="['left','left','left','center']" 
              data-y="middle" 
              data-hoffset="['50','30','30','0']"
-             data-voffset="['-20','-20','-20','30']" 
+             data-voffset="['50','-20','-20','30']" 
              data-fontsize="['26','26','22','24']" 
              data-lineheight="['36','36','32','34']" 
              data-width="['500','500','420','340']" 
@@ -223,25 +224,31 @@ faq_area:
              data-whitespace="['normal','normal','normal','normal']" 
              data-frames='[{"delay":1500,"speed":1200,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' 
              data-responsive="on" 
-             data-responsive_offset="on" style="z-index: 9;"> {{page.slider_area.sub_title}}
+             data-responsive_offset="on" style="z-index: 9;"> 
+            
+            <div class="sidebox widget">
+              <i class="icofont-bullhorn" style="color:#FF0000"><b style="color:#FF0000";>News!</b>
+              </i>
+              <ul class="unordered-list-disc"> 
+                {% for post in site.posts limit: 3 %}
+                  <li>
+                      <!-- <div class="post-content"> -->
+                        {% if post.title %}
+                        <h6 class="post-title"><a href="{{post.url}}">{{post.title | truncatewords: "60" }}</a></h6>
+                        {% endif %}
+                        {% if post.date %}
+                        <div class="meta">
+                          <span class="date"><i class="jam jam-clock"></i>{{post.date | date_to_string}}</span>
+                        </div>
+                        {% endif %}
+                      <!-- </div> -->
+                  </li>
+                  {% endfor %}
+              </ul>
+            </div>
+            
          </div>
-	     <!-- /.tp-caption -->
 	     {% endif %}
-	     {% if page.slider_area.button_text %}
-          <a class="tp-caption btn btn-l btn-default" 
-             data-x="['left','left','left','center']" 
-             data-y="middle" 
-             data-hoffset="['50','30','30','0']"
-             data-voffset="['75','75','75','135']" 
-             data-width="['auto','auto','auto','auto']" 
-             data-textAlign="['left','left','left','center']" 
-             data-frames='[{"delay":2000,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' 
-             data-responsive="on" 
-             data-responsive_offset="on" style="z-index: 9;" href="{{page.slider_area.button_url}}"> 
-             {{page.slider_area.button_text}}
-        </a>
-	    <!-- /.tp-caption -->
-	    {% endif %}
         </li>
       </ul>
       <div class="tp-bannertimer tp-bottom"></div>
@@ -461,99 +468,59 @@ faq_area:
       </div>
     </div>
     {% endif%}
+
     <div class="wrapper light-wrapper">
       <div class="container inner">
-        {% assign pricing_data = page.pricing_table %}
-        {% if pricing_data.enable %}
-        <div class="row">
-          <div class="col-lg-5 pr-50 pr-md-15">
-            <h2 class="title-color color-gray">{{pricing_data.title}}</h2>
-            <h3 class="display-3">{{pricing_data.sub_title}}</h3>
-            <div class="space20"></div>
-            <p>{{pricing_data.description}}</p>
-            <div class="space10"></div>
-            {% if pricing_data.pricing_url %}
-             <a href="{{pricing_data.pricing_url}}" class="btn">See All Prices</a>
-            {% endif %}
+        <h2 class="section-title mb-40 text-center">THE CORE PyKT TEAM</h2>
+        <div class="row text-center">
+          <div class="col-md-3">
+            <figure class="img-blob blob1 mb-25"><img src="{{relative_url}}/assets/images/people/zitao.jpg" style="width: 10rem" alt="" /></figure>
+            <h4 class="mb-15">Zitao Liu</h4>
+            <div class="meta mb-5">Algorithm Scientist</div>
+            <ul class="social social-s ml-auto">
+              <!-- <li><a href="#"><i class="jam jam-twitter"></i></a></li> -->
+              <!-- <li><a href="#"><i class="jam jam-facebook"></i></a></li> -->
+              <!-- <li><a href="#"><i class="jam jam-instagram"></i></a></li> -->
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <figure class="img-blob blob1 mb-25"><img src="{{relative_url}}/assets/images/people/qiongqiong.jpg" style="width: 10rem" alt="" /></figure>
+            <h4 class="mb-15">Qiongqiong Liu</h4>
+            <div class="meta mb-5">Algorithm Expert</div>
+            <ul class="social social-s ml-auto">
+              <!-- <li><a href="#"><i class="jam jam-twitter"></i></a></li> -->
+              <!-- <li><a href="#"><i class="jam jam-facebook"></i></a></li> -->
+              <!-- <li><a href="#"><i class="jam jam-instagram"></i></a></li> -->
+            </ul>
           </div>
           <!--/column -->
-          <div class="space70 d-none d-md-block d-lg-none"></div>
-          <div class="space20 d-md-none"></div>
-          <div class="col-lg-7">
-            <div class="pricing-wrapper">
-              <div class="row no-gutters">
-                {% for pricing in pricing_data.plans %}
-                <div class="col-md-6">
-                  <div class="pricing panel box bg-white shadow">
-                    <div class="panel-heading">
-                      <div class="prices color-dark">
-                        <div class="price price-show"><span class="price-currency">$</span><span class="price-value">{{pricing.monthly_price}}</span> <span class="price-duration">month</span></div>
-                      </div>
-                      <h4 class="panel-title mb-0">{{pricing.title}}</h4>
-                    </div>
-                    <div class="panel-body">
-                      <table class="table">
-                        {% for features in pricing.features %}
-                          <tr>
-                             <td>{{features}}</td>
-                          </tr>
-                        {% endfor %}
-                      </table>
-                    </div>
-                    <div class="panel-footer"><a href="{{pricing.pricing_url}}" class="btn" role="button">Choose Plan</a></div>
-                  </div>
-                </div>
-               {% endfor %}
-              </div>
-            </div>
+          <div class="col-md-3">
+            <figure class="img-blob blob1 mb-25"><img src="{{relative_url}}/assets/images/people/jiahao.jpg" style="width: 10rem" alt="" /></figure>
+            <h4 class="mb-15">Jiahao Chen</h4>
+            <div class="meta mb-5">Algorithm Engineer</div>
+            <ul class="social social-s ml-auto">
+              <!-- <li><a href="#"><i class="jam jam-twitter"></i></a></li> -->
+              <!-- <li><a href="#"><i class="jam jam-facebook"></i></a></li> -->
+              <!-- <li><a href="#"><i class="jam jam-instagram"></i></a></li> -->
+            </ul>
           </div>
+          <!--/column -->
+          <div class="col-md-3">
+            <figure class="img-blob blob1 mb-25"><img src="{{relative_url}}/assets/images/people/shuyan.jpg" style="width: 10rem" alt="" /></figure>
+            <h4 class="mb-15">Shuyan Huang</h4>
+            <div class="meta mb-5">Algorithm Engineer</div>
+            <ul class="social social-s ml-auto">
+              <!-- <li><a href="#"><i class="jam jam-twitter"></i></a></li>
+              <li><a href="#"><i class="jam jam-facebook"></i></a></li>
+              <li><a href="#"><i class="jam jam-instagram"></i></a></li> -->
+            </ul>
+          </div>
+          <!--/column -->
         </div>
-       {% endif %}
+        <!--/.row -->
       </div>
+      <!-- /.container -->
     </div>
-    {% if page.faq_area.enable %}
-    <div class="wrapper light-wrapper inner-bottom">
-        <div class="container">
-            <div class="row">
-              {% if page.faq_area.image %}
-                <div class="col-lg-6">
-                    <figure>
-                      <img src="{{page.faq_area.image}}"  alt="{{page.faq_area.title}}"/>
-                    </figure>
-                </div>
-                {% endif %}
-                <div class="space50 d-none d-md-block d-lg-none"></div>
-                <div class="space10 d-md-none"></div>
-                <div class="col-lg-6 pl-60 pl-md-15">
-                    <h2 class="title-bg bg-default color-default">{{page.faq_area.title}}</h2>
-                    <div class="space10"></div>
-                    <h3 class="display-3">{{page.faq_area.sub_title}}</h3>
-                    <div class="space20"></div>
-                    <div id="accordion-2" class="accordion-wrapper simple">
-                       {% for tab in page.faq_area.tabs %}
-                        <div class="card">
-                            <div class="card-header" id="accordion-heading-2-1">
-                                <h5>
-                                    <button class="collapsed" data-toggle="collapse" data-target="#accordion-collapse-2-{{forloop.index}}" aria-expanded="false" aria-controls="accordion-collapse-2-1">
-                                     {{tab.question}}
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="accordion-collapse-2-{{forloop.index}}" class="collapse" aria-labelledby="accordion-heading-2-{{forloop.index}}" data-target="#accordion-2" data-parent="#accordion-2">
-                                <div class="card-body">
-                                    <p>
-                                       {{tab.answer}}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <!-- /.accordion-wrapper -->
-                </div>
-            </div>
-        </div>
-    </div>
-    {% endif %}
 </div>
+
 {% include footer_2.html light_logo="true" %}
