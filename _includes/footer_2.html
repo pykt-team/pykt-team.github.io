@@ -76,14 +76,9 @@
       <!-- /column -->
     </div>
     <!-- /.row -->
+    <div class="space10"></div>
+    <p class="text-center">{{site.data.general_settings.copyright_text}}</p>
   </div>
   <!-- /.container -->
-  <div class="container inner pt-0 pb-40 d-flex align-items-center">
-    <p class="mb-0 mr-auto">{{site.data.general_settings.copyright_text}}</p>
-    <ul class="social social-mute social-s ml-auto">
-      {% for social_links in site.data.general_settings.social_accounts.links %}
-       <li><a href="{{social_links.url}}"><i class="{{social_links.icon}}"></i></a></li>
-      {% endfor %}
-    </ul>
-  </div>
+  
 </footer>

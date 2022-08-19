@@ -1,12 +1,12 @@
 ---
 title: PyKT
-email: contact@pykt.com
+email: liuzitao@tal.com
 email_2: ''
 description: PyKT is a python library build upon PyTorch to train deep learning based knowledge tracing models. 
-black_logo_1x: "/assets/images/logo_pykt.png"
-black_logo_2x: "/assets/images/logo_pykt@2x.png"
-light_logo_1x: "/assets/images/logo-light_pykt.png"
-light_logo_2x: "/assets/images/logo-light_pykt@2x.png"
+black_logo_1x: "/assets/images/logo-light_pykt.png"
+black_logo_2x: "/assets/images/logo-light_pykt@2x.png"
+light_logo_1x: "/assets/images/logo_pykt.png"
+light_logo_2x: "/assets/images/logo_pykt@2x.png"
 # address_01: Beijing, China
 # email: concat@pykt.com
 # phone_number: ''
