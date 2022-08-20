@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PyKT update to version v0.0.37
+title: pyKT adds IEKT model
 date: 2022-07-26 16:00:00 +0000
 tags: ''
 categories: []
@@ -9,8 +9,13 @@ post_image: "/assets/images/posts/update.jpeg"
 post_format: ''
 trending: true
 ---
-## PyKT update to version v0.0.37
+## pyKT update to version v0.0.37
 In this update, we add four models and two datasets, more details can see following:
+
+Individual Cognition and Acquisition Estimation"
+- **,** released with the paper "Temporal Cross-effects in Knowledge Tracing"
+- **LPKT** released with the paper "Learning Process-consistent Knowledge Tracing"
+- **SKVMN** 
 
 **New models:**
 - **IEKT** released with the paper "Tracing Knowledge State with Individual Cognition and Acquisition Estimation"

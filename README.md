@@ -1,8 +1,8 @@
-# PyKT site
+# pyKT site
 
 [![Build and deploy Jekyll site to GitHub Pages](https://github.com/pykt-team/pykt-team.github.io/actions/workflows/github-pages.yml/badge.svg)](https://github.com/pykt-team/pykt-team.github.io/actions/workflows/github-pages.yml)
 
-A static website built in [Jekyll](https://jekyllrb.com/) and [snowlake theme](https://jekyllthemes.io/theme/snowlake-website-jekyll-theme) for [PyKT](https://github.com/pykt-team/pykt-toolkit), and its tutorials and documentation.
+A static website built in [Jekyll](https://jekyllrb.com/) and [snowlake theme](https://jekyllthemes.io/theme/snowlake-website-jekyll-theme) for [pyKT](https://github.com/pykt-team/pykt-toolkit), and its tutorials and documentation.
 
 ## Run in local
 
