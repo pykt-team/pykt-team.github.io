@@ -42,6 +42,9 @@ three_columns_area:
       button_text: "Learn More"
       button_url: "#"
 
+
+
+
 two_columns_one_area:
   enable: false
   title: "How It Works?"
@@ -89,6 +92,9 @@ pricing_table:
   description: |
     "Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam."
   
+person_info:
+  enable: true
+
 
 faq_area:
   enable: false
@@ -460,7 +466,7 @@ faq_area:
       </div>
     </div>
     {% endif%}
-
+    {% if page.person_info.enable %}
     <div class="wrapper light-wrapper">
       <div class="container inner">
         <h2 class="section-title mb-40 text-center">THE CORE pyKT TEAM</h2>
@@ -513,6 +519,7 @@ faq_area:
       </div>
       <!-- /.container -->
     </div>
+    {% endif%}
 </div>
 
 {% include footer_2.html light_logo="true"%}
