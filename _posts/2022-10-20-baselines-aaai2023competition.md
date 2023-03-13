@@ -5,13 +5,10 @@ date: 2022-10-20 16:00:00 +0000
 tags: ''
 categories: []
 author: ''
-# post_image: "/assets/images/posts/update.jpeg"
+post_image: "/assets/images/posts/aaai2023competition-baselines.jpeg"
 post_format: ''
 trending: true
 ---
-
-## Baselines for Global Knowledge Tracing Challenge
-
 We have used pyKT to run **DKT** and **AKT** on the aforementioned training data and evaluate on our public test sets. All these approaches are purely trained with question/KC ids and student responses without any auxiliary information, such as question content. The results are used as baseline results for this competition:
 
 

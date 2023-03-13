@@ -5,12 +5,10 @@ date: 2022-10-16 16:00:00 +0000
 tags: ''
 categories: []
 author: ''
-# post_image: "/assets/images/posts/update.jpeg"
+post_image: "/assets/images/posts/aaai2023competition.jpeg"
 post_format: ''
 trending: true
 ---
-## AAAI2023 Global Knowledge Tracing Challenge
-
 [Challenge Website](http://ai4ed.cc/competitions/aaai2023competition)
 
 The Association for the Advancement of Artificial Intelligence (AAAI) is a prestigious organization in the field of artificial intelligence and computer science. It was founded by Allen Newell, Marvin Minsky, John McCarthy, and other luminaries in the field. As a leading organization, AAAI has become a platform for scholars and professionals to showcase their cutting-edge research in AI and explore its academic applications.
