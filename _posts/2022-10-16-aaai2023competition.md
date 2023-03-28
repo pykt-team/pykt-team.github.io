@@ -1,13 +1,14 @@
 ---
 layout: post
 title: AAAI2023 Global Knowledge Tracing Challenge
-date: 2022-10-16 16:00:00 +0000
+date: 2022-10-16T16:00:00.000+00:00
 tags: ''
 categories: []
 author: ''
-post_image: "/assets/images/posts/aaai2023competition.jpeg"
+post_image: "/assets/images/1_02.png"
 post_format: ''
 trending: true
+
 ---
 [Challenge Website](http://ai4ed.cc/competitions/aaai2023competition)
 
@@ -22,4 +23,3 @@ The AAAI2023 Global Knowledge Tracing Challenge aims to develop new techniques a
 The competition attracted 37 different organizations from eight countries, including the United States, the United Kingdom, Australia, and Singapore, with a total of 116 participants. Well-known companies and research institutes, such as Ant Group, NetEase, A*STAR, and TagHive, participated, as well as world-renowned universities, such as Carnegie Mellon University, Columbia University, Cornell University, Massachusetts Institute of Technology, Korea University, and the University of Edinburgh etc.
 
 The total awards for the AAAI2023 Global Knowledge Tracing Challenge are $1900, with the final submission deadline set for December 31, 2022. By participating in the challenge, researchers and practitioners have the opportunity to contribute to the advancement of the education system, predict students' abilities more accurately, and help students learn better and faster. Furthermore, the challenge is an excellent platform for researchers and practitioners to collaborate, share their ideas, and explore the frontiers of knowledge tracing techniques.
-
