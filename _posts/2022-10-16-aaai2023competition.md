@@ -5,7 +5,7 @@ date: 2022-10-16T16:00:00.000+00:00
 tags: ''
 categories: []
 author: ''
-post_image: "/assets/images/1_02.png"
+post_image: "/assets/images/posts/_02.jpg"
 post_format: ''
 trending: true
 
