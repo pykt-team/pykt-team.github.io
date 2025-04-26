@@ -1,0 +1,264 @@
+[
+  
+    {
+      "title"    : "Enhancing Knowledge Tracing through Decoupling Cognitive Pattern from Error-Prone Data",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/roubstkt",
+      "date"     : "2025-04-26 00:00:00 +0800",
+      "desc"     : "Enhancing Knowledge Tracing through Decoupling Cognitive Pattern from Error-Prone Data"
+    } ,
+  
+    {
+      "title"    : "HCGKT: Hierarchical Contrastive Graph Knowledge Tracing with Multi-level Feature Learning",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/hcgkt",
+      "date"     : "2025-04-16 00:00:00 +0800",
+      "desc"     : "HCGKT: Hierarchical Contrastive Graph Knowledge Tracing with Multi-level Feature Learning"
+    } ,
+  
+    {
+      "title"    : "Uncertainty-aware Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/ukt",
+      "date"     : "2025-03-17 00:00:00 +0800",
+      "desc"     : "Uncertainty-aware Knowledge Tracing"
+    } ,
+  
+    {
+      "title"    : "Rethinking and Improving Student Learning and Forgetting Processes for Attention Based Knowledge Tracing Models",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/lefokt",
+      "date"     : "2025-02-16 00:00:00 +0800",
+      "desc"     : "Rethinking and Improving Student Learning and Forgetting Processes for Attention Based Knowledge Tracing Models"
+    } ,
+  
+    {
+      "title"    : "Cognitive Fluctuations Enhanced Attention Network for Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/fluckt",
+      "date"     : "2025-02-16 00:00:00 +0800",
+      "desc"     : "Cognitive Fluctuations Enhanced Attention Network for Knowledge Tracing"
+    } ,
+  
+    {
+      "title"    : "csKT: Addressing Cold-start Problem in Knowledge Tracing via Kernel Bias and Cone Attention",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/cskt",
+      "date"     : "2025-01-13 00:00:00 +0800",
+      "desc"     : "csKT: Addressing Cold-start Problem in Knowledge Tracing via Kernel Bias and Cone Attention"
+    } ,
+  
+    {
+      "title"    : "Revisiting Knowledge Tracing: A Simple and Powerful Model",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/rekt",
+      "date"     : "2024-11-19 00:00:00 +0800",
+      "desc"     : "Revisiting Knowledge Tracing: A Simple and Powerful Model"
+    } ,
+  
+    {
+      "title"    : "stableKT: Enhancing Length Generalization for Attention Based Knowledge Tracing Models with Linear Biases",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/stablekt",
+      "date"     : "2024-09-19 00:00:00 +0800",
+      "desc"     : "stableKT: Enhancing Length Generalization for Attention Based Knowledge Tracing Models with Linear Biases"
+    } ,
+  
+    {
+      "title"    : "extraKT: Extending Context Window of Attention Based Knowledge Tracing Models via Length Extrapolation",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/extrakt",
+      "date"     : "2024-09-19 00:00:00 +0800",
+      "desc"     : "extraKT: Extending Context Window of Attention Based Knowledge Tracing Models via Length Extrapolation"
+    } ,
+  
+    {
+      "title"    : "FoLiBiKT: Forgetting-aware Linear Bias for Attentive Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/folibikt",
+      "date"     : "2024-03-09 00:00:00 +0800",
+      "desc"     : "FoLiBiKT: Forgetting-aware Linear Bias for Attentive Knowledge Tracing"
+    } ,
+  
+    {
+      "title"    : "Dtransformer: Stable Knowledge Tracing with Diagnostic Transformer",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/dtransformer",
+      "date"     : "2024-03-09 00:00:00 +0800",
+      "desc"     : "Dtransformer: Stable Knowledge Tracing with Diagnostic Transformer"
+    } ,
+  
+    {
+      "title"    : "SparseKT:Towards Robust Knowledge Tracing Models via k-Sparse Attention",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/sparsekt",
+      "date"     : "2023-07-07 00:00:00 +0800",
+      "desc"     : "SparseKT:Towards Robust Knowledge Tracing Models via k-Sparse Attention"
+    } ,
+  
+    {
+      "title"    : "simpleKT: a simple but tough-to-beat baseline for knowledge tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/simplekt",
+      "date"     : "2023-07-06 00:00:00 +0800",
+      "desc"     : "simpleKT: a simple but tough-to-beat baseline for knowledge tracing"
+    } ,
+  
+    {
+      "title"    : "QIKT: Question-centric Interpretable Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/qikt",
+      "date"     : "2023-07-05 00:00:00 +0800",
+      "desc"     : "QIKT: Question-centric Interpretable Knowledge Tracing"
+    } ,
+  
+    {
+      "title"    : "DIMKT: DIfficulty Matching Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/dimkt",
+      "date"     : "2023-07-04 00:00:00 +0800",
+      "desc"     : "DIMKT: DIfficulty Matching Knowledge Tracing"
+    } ,
+  
+    {
+      "title"    : "RKT: relation-aware self-attention for knowledge tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/rkt",
+      "date"     : "2023-07-03 00:00:00 +0800",
+      "desc"     : "RKT: relation-aware self-attention for knowledge tracing"
+    } ,
+  
+    {
+      "title"    : "AT-DKT:Enhancing deep knowledge tracing with auxiliary tasks",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/atdkt",
+      "date"     : "2023-07-02 00:00:00 +0800",
+      "desc"     : "AT-DKT:Enhancing deep knowledge tracing with auxiliary tasks"
+    } ,
+  
+    {
+      "title"    : "Baselines for Global Knowledge Tracing Challenge",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/baselines-aaai2023competition",
+      "date"     : "2022-10-21 00:00:00 +0800",
+      "desc"     : "Baselines for Global Knowledge Tracing Challenge"
+    } ,
+  
+    {
+      "title"    : "AAAI2023 Global Knowledge Tracing Challenge",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/aaai2023competition",
+      "date"     : "2022-10-17 00:00:00 +0800",
+      "desc"     : "AAAI2023 Global Knowledge Tracing Challenge"
+    } ,
+  
+    {
+      "title"    : "qDKT: Question-centric Deep Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/qdkt",
+      "date"     : "2022-08-13 00:00:00 +0800",
+      "desc"     : "qDKT: Question-centric Deep Knowledge Tracing"
+    } ,
+  
+    {
+      "title"    : "Deep-IRT: Deep Item Response Theory",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/deep-irt",
+      "date"     : "2022-08-12 00:00:00 +0800",
+      "desc"     : "Deep-IRT: Deep Item Response Theory"
+    } ,
+  
+    {
+      "title"    : "EdNet: A Large-Scale Hierarchical Dataset in Education",
+      "category" : "",
+      "tags"     : "dataset",
+      "url"      : "/ednet",
+      "date"     : "2022-08-04 00:00:00 +0800",
+      "desc"     : "EdNet: A Large-Scale Hierarchical Dataset in Education"
+    } ,
+  
+    {
+      "title"    : "SKVMN: Sequential Key-Value Memory Networks",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/skvmn",
+      "date"     : "2022-07-25 00:00:00 +0800",
+      "desc"     : "SKVMN: Sequential Key-Value Memory Networks"
+    } ,
+  
+    {
+      "title"    : "LPKT: Learning Process-consistent Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/lpkt",
+      "date"     : "2022-07-14 00:00:00 +0800",
+      "desc"     : "LPKT: Learning Process-consistent Knowledge Tracing"
+    } ,
+  
+    {
+      "title"    : "HawkesKT: Temporal Cross-Effects in Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/hawkes",
+      "date"     : "2022-07-05 00:00:00 +0800",
+      "desc"     : "HawkesKT: Temporal Cross-Effects in Knowledge Tracing"
+    } ,
+  
+    {
+      "title"    : "IEKT: Individual Estimation Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/iekt",
+      "date"     : "2022-06-28 00:00:00 +0800",
+      "desc"     : "IEKT: Individual Estimation Knowledge Tracing"
+    } ,
+  
+    {
+      "title"    : "Our paper &quot;pyKT&quot; released in arxiv.",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/our-paper-pykt-released-in-arxiv",
+      "date"     : "2022-06-23 00:00:00 +0800",
+      "desc"     : "Our paper "pyKT" released in arxiv."
+    } ,
+  
+    {
+      "title"    : "New dataset ASSISTments2012",
+      "category" : "",
+      "tags"     : "dataset",
+      "url"      : "/assist2012",
+      "date"     : "2022-06-18 00:00:00 +0800",
+      "desc"     : "New dataset ASSISTments2012"
+    } ,
+  
+    {
+      "title"    : "New dataset ASSISTments2017",
+      "category" : "",
+      "tags"     : "dataset",
+      "url"      : "/assist2017",
+      "date"     : "2022-06-17 00:00:00 +0800",
+      "desc"     : "New dataset ASSISTments2017"
+    } 
+  
+]
