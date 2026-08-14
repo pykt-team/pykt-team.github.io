@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "Cognitive Decoupling and Adaptive Fusion for Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/cdfkt",
+      "date"     : "2026-08-14 00:00:00 +0800",
+      "desc"     : "Cognitive Decoupling and Adaptive Fusion for Knowledge Tracing"
+    } ,
+  
+    {
       "title"    : "MoC-KT: Mixture of Convolutions for Knowledge Tracing",
       "category" : "",
       "tags"     : "model",
@@ -60,6 +69,15 @@
       "tags"     : "model",
       "url"      : "/ukt",
       "date"     : "2025-03-17 00:00:00 +0800",
+      "desc"     : "Uncertainty-aware Knowledge Tracing"
+    } ,
+  
+    {
+      "title"    : "Uncertainty-aware Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/fluckt",
+      "date"     : "2025-03-16 00:00:00 +0800",
       "desc"     : "Uncertainty-aware Knowledge Tracing"
     } ,
   
