@@ -1,15 +1,6 @@
 [
   
     {
-      "title"    : "Cognitive Decoupling and Adaptive Fusion for Knowledge Tracing",
-      "category" : "",
-      "tags"     : "model",
-      "url"      : "/cdfkt",
-      "date"     : "2026-08-14 00:00:00 +0800",
-      "desc"     : "Cognitive Decoupling and Adaptive Fusion for Knowledge Tracing"
-    } ,
-  
-    {
       "title"    : "MoC-KT: Mixture of Convolutions for Knowledge Tracing",
       "category" : "",
       "tags"     : "model",
