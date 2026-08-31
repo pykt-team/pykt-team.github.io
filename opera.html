@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="shortcut icon" href="/assets/images/favicon.ico"/>
-  <title> Baselines for Global Knowledge Tracing Challenge </title>
+  <title> OPERA: Option-level Pedagogical Explanation via Reasoning for Augmented Knowledge Tracing </title>
   <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="/assets/css/plugins.css"/>
   <link rel="stylesheet" type="text/css" href="/assets/revolution/css/settings.css"/>
@@ -159,7 +159,7 @@
           <div class="post mb-0">
             
             <figure class="rounded text-center">
-              <img src="/assets/images/posts/baselines_aaai2023competition.jpg" alt="Baselines for Global Knowledge Tracing Challenge"/>
+              <img src="/assets/images/posts/opera.png" alt="OPERA: Option-level Pedagogical Explanation via Reasoning for Augmented Knowledge Tracing"/>
             </figure>
             
             <div class="space40"></div>
@@ -169,59 +169,19 @@
                 <a href="/category/" class="badge badge-pill bg-hibiscus"></a>
               </div>
               
-              <h2 class="post-title text-center">Baselines for Global Knowledge Tracing Challenge</h2>
+              <h2 class="post-title text-center">OPERA: Option-level Pedagogical Explanation via Reasoning for Augmented Knowledge Tracing</h2>
               <div class="meta text-center">
                 
-                 <span class="date"><i class="jam jam-clock"></i>21 Oct 2022</span>
+                 <span class="date"><i class="jam jam-clock"></i>24 Aug 2026</span>
                 
                 
                  <span class="author"><i class="jam jam-user"></i><a href="/author/">By </a></span>
                 
               </div>
-               <p>We have used pyKT to run <strong>DKT</strong> and <strong>AKT</strong> on the aforementioned training data and evaluate on our public test sets. All these approaches are purely trained with question/KC ids and student responses without any auxiliary information, such as question content. The results are used as baseline results for this competition:</p>
+               <p>OPERA is a model-agnostic framework that injects option-level pedagogical signals into knowledge tracing models without any online LLM call. It guides an LLM to generate, for each option of a multiple-choice question, a structured explanation capturing either the correct reasoning pathway or the specific misconception behind a distractor. The generated content is validated by a multi-judge quality assurance mechanism, encoded into semantic vectors, and injected into the input layer of any KT backbone in place of the conventional ID embedding. All LLM computation is confined to one-time offline preprocessing, making OPERA model-agnostic and free from inference-time overhead. Experiments on three multiple-choice datasets show that OPERA consistently boosts lightweight ID-based KT backbones to state-of-the-art results that match or surpass much heavier process-aware models.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Model</th>
-      <th style="text-align: center">Non-Accumulative</th>
-      <th style="text-align: center">Accumulative</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">DKT</td>
-      <td style="text-align: center">0.6801</td>
-      <td style="text-align: center">0.7086</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">AKT</td>
-      <td style="text-align: center">0.7812</td>
-      <td style="text-align: center">0.7692</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Majority</td>
-      <td style="text-align: center">0.7381</td>
-      <td style="text-align: center">-</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Practically, there are two different approaches, i.e., <strong>accumulative prediction</strong> and <strong>non-accumulative prediction</strong>. The accumulative prediction approach uses the last predicted values for the current prediction while the non-accumulative prediction predicts all future values all at once. Details are discussed in the pyKT paper <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
-
-<p><a href="https://pykt.org/">pyKT</a> is a python library for knowledge tracing which contains more than 10 popular deep learning based knowledge tracing models. In the challenge, we provide detailed introductions to using pyKT. You can run more than 10 models using almost the same codes.</p>
-
-<p>Codes and detailed instructions can find in <a href="https://github.com/pykt-team/pykt-toolkit/tree/main/examples/competitions/aaai2023_competition">here</a>.</p>
-
-<p>You can find the dataset download link <a href="http://ai4ed.cc/competitions/aaai2023competition">here</a></p>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>Liu, Zitao, et al. “pyKT: A Python Library to Benchmark Deep Learning based Knowledge Tracing Models.” Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<p>Original paper can be found at Huang Zhiwei et al. “OPERA: Option-level Pedagogical Explanation via Reasoning for Augmented Knowledge Tracing.” <a href="https://pykt.org/">Proceedings of the CIKM 2026.
+</a></p>
 
               
               <div class="clearfix"></div>
@@ -232,28 +192,32 @@
                     
                     
                       
-                    
+                    </li>
+                      
+                        <li data-sort="0034">
+                           <a class="btn btn-s" href="/tag/model">model</a>
+                        
                 </ul>
                 <div class="space20 d-lg-none"></div>
                 <div class="d-flex align-items-center">
                  <p class="pr-20 mb-0"><strong>Share on:</strong></p>
 <ul class="social social-mute">
     <li>
-    <a  href="https://www.facebook.com/sharer/sharer.php?u=https://pykt.org/baselines-aaai2023competition"
+    <a  href="https://www.facebook.com/sharer/sharer.php?u=https://pykt.org/opera"
         onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
         title="Share on Facebook" >
         <i class="jam jam-facebook"></i>
     </a>
     </li>
     <li>
-      <a  href="https://twitter.com/intent/tweet?text=Baselines for Global Knowledge Tracing Challenge&url=https://pykt.org/baselines-aaai2023competition"
+      <a  href="https://twitter.com/intent/tweet?text=OPERA: Option-level Pedagogical Explanation via Reasoning for Augmented Knowledge Tracing&url=https://pykt.org/opera"
         onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
         title="Share on Twitter" >
         <i class="jam jam-twitter"></i>
      </a>
     </li>
     <li>
-    <a  href="http://pinterest.com/pin/create/button/?url=&media=https://pykt.org/assets/images/posts/baselines_aaai2023competition.jpg&description=" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" >
+    <a  href="http://pinterest.com/pin/create/button/?url=&media=https://pykt.org/assets/images/posts/opera.png&description=" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest" >
         <i class="jam jam-pinterest"></i>
     </a>
     </li>
@@ -457,8 +421,8 @@
 <script>
 
 var disqus_config = function () {
-this.page.url = 'https://pykt.org/baselines-aaai2023competition';  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = '/baselines-aaai2023competition'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = 'https://pykt.org/opera';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = '/opera'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

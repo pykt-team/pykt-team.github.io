@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "OPERA: Option-level Pedagogical Explanation via Reasoning for Augmented Knowledge Tracing",
+      "category" : "",
+      "tags"     : "model",
+      "url"      : "/opera",
+      "date"     : "2026-08-24 00:00:00 +0800",
+      "desc"     : "OPERA: Option-level Pedagogical Explanation via Reasoning for Augmented Knowledge Tracing"
+    } ,
+  
+    {
       "title"    : "MoC-KT: Mixture of Convolutions for Knowledge Tracing",
       "category" : "",
       "tags"     : "model",
